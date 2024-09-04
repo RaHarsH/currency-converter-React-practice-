@@ -2,13 +2,13 @@ import Card from "./components"
 import {useState} from 'react'
 
 function App() {
-  const [from, setFrom] = useState('USD');
-  const [to, setTo] = useState('INR');
+  const [fromCurr, setFromCurr] = useState('USD');
+  const [toCurr, setToCurr] = useState('INR');
   return (
     <>
      <h1 className="text-center font-semibold">Currency Converter</h1>
-     <Card title='From' currencyType={from}/>
-     <Card title='to' currencyType={to}/>
+     <Card title='From' currencyType={fromCurr}/>
+     <Card title='to' currencyType={toCurr}/>
     </>
   )
 }
